@@ -1,0 +1,11 @@
+services:
+  daily-diet:
+    image: mysql
+    ports:
+      - "3307:3306"
+    restart: always
+    environment:
+      - MYSQL_PASSWORD=podevermesmosotoestudando
+      - MYSQL_ROOT_PASSWORD=superuser
+      - MYSQL_DATABASE=diet
+      - MYSQL_USER=nather
